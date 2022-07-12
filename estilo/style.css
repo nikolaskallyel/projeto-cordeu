@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+:root {
+    --font1: verdana, geneva, tahoma;
+    --font2: 'passion one', cursive;
+    --font3: família de fontes: 'Bebas Neue', cursiva;
+
+}
+
+html, body{
+    font-family: var(--font1);
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--font2);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+} 
+
+header > p{
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover, footer a:hover{
+    text-decoration: underline;
+}
+section{
+    font-family: var(--font3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 3.5vw;
+    padding-left: 30px;
+}
+section.normal{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.384);
+    background-attachment: fixed;
+
+}
+section > p{
+    padding-bottom: 2em;
+}
+section.imagem > p{
+
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.425);
+    text-shadow: 1px 1px 0px black;
+}
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position:  right center;
+    background-size: cover;
+}
+section#img02{
+background-image: url('../imagens/background002.jpg');
+background-size: cover;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
